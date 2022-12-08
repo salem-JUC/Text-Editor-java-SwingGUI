@@ -4,10 +4,7 @@
  */
 package textEditor;
 
-import java.awt.BorderLayout;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -48,6 +45,7 @@ class appFrame extends JFrame {
         pnlText = new JPanel();
         pnlText.setLayout(new BorderLayout(5, 5));
         taNote = new JTextArea();
+        setBackground(Color.DARK_GRAY);
         pan = new JScrollPane(taNote, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         pnlOperations = new Operations();
         add(pnlOperations, BorderLayout.EAST);
