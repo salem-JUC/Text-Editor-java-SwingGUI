@@ -141,6 +141,9 @@ class appFrame extends JFrame {
 
                     String Text = null;
                     while (inputStream.hasNextLine()) {
+                        if(Text == null){
+                            Text = inputStream.nextLine();
+                        }
                         Text += inputStream.nextLine() + '\n';
                     }
                     taNote.setText(Text);
